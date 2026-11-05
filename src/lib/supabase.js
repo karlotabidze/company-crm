@@ -66,7 +66,6 @@ async function ensureProfile(session) {
       id: user.id,
       email: user.email || '',
       full_name: user.user_metadata?.full_name || user.email || '',
-      role: 'member',
       is_active: true,
     },
     prefer: 'resolution=merge-duplicates,return=minimal',
